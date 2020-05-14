@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+
+
+target 'Example' do
+  use_frameworks!
+
+#  pod 'Linden', :path => './Linden'
+  # pod 'YLLS', :path => './YLLS'
+  # Pods for Yamibuy
+#   pod 'Iterable-iOS-SDK', :git => 'https://github.com/wittonzhao/iterable-swift-sdk', :branch => 'falcon'
+ # pod 'Iterable-iOS-SDK', :git => 'https://github.com/wittonzhao/iterable-swift-sdk', :tag => '6.2.2.2'
+
+ 
+  # reveal 
+  pod 'Reveal-SDK','4',:configurations => ['Debug']
+ end

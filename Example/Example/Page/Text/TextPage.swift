@@ -13,8 +13,18 @@ private let github = "https://github.com/Jinxiansen/SwiftUI"
 struct TextPage : View {
 
     var body: some View {
-        VStack(spacing: 15) {
-            Text("SwiftUI")
+        VStack(spacing: 0) {
+          Text("111")
+          
+          
+          Text("SwiftUIo")
+            .tag(1112)
+            .colorScheme(/*@START_MENU_TOKEN@*/.light/*@END_MENU_TOKEN@*/)
+            
+//          Spacer()
+
+            Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+
             Text("SwiftUI")
                 .foregroundColor(.orange)
                 .bold()
@@ -29,16 +39,20 @@ struct TextPage : View {
                     print(github)
             }
             
-            HStack {
+          
+          
+          HStack (alignment: VerticalAlignment.bottom){
                 Text("Text")
+            Spacer()
                 Text("TextField").bold()
                 Text("SecureField").foregroundColor(.orange)
             }
             
             Text("Views and controls are the visual building blocks of your app’s user interface." +
                 " Use them to present your app’s content onscreen.")
-                .lineLimit(nil)
+              .lineLimit(nil).padding()
         }
+//        .scaledToFit()
     }
 }
 
